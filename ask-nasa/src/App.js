@@ -1,8 +1,12 @@
 import './App.css';
+import React, { useState } from 'react';
+import GetPostData from './components/GetPostData';
 
 function App() {
+
+  const [date, setDate] = useState('');
   return (
-    <div>Hello world!</div>
+    <GetPostData date={date} />
   );
 }
 
